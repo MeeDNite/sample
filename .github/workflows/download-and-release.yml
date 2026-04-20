@@ -14,7 +14,7 @@ jobs:
           curl -L "https://coqui.gateway.scarf.sh/v0.10.1_models/tts_models--fa--custom--glow-tts.zip" -o tts_models--fa--custom--glow-tts.zip
 
       - name: Upload to Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: latest
           files: tts_models--fa--custom--glow-tts.zip
