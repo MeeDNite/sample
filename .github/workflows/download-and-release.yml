@@ -14,12 +14,12 @@ jobs:
     steps:
       - name: Download file
         run: |
-          curl -L "https://coqui.gateway.scarf.sh/v0.10.1_models/tts_models--fa--custom--glow-tts.zip" -o tts_models--fa--custom--glow-tts.zip
+          curl -L "https://downloads.claude.ai/claude-code-releases/2.1.119/linux/claude" -o claude
 
       - name: Upload to Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: latest
-          files: tts_models--fa--custom--glow-tts.zip
+          files: claude
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
