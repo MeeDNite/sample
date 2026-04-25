@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: Download file
         run: |
-          curl -L "https://downloads.claude.ai/claude-code-releases/2.1.119/linux/claude" -o claude
+          curl -L "https://downloads.claude.ai/claude-code-releases/2.1.119/linux-x64/claude" -o claude
 
       - name: Upload to Release
         uses: softprops/action-gh-release@v2
