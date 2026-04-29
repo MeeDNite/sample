@@ -14,12 +14,12 @@ jobs:
     steps:
       - name: Download file
         run: |
-          curl -L "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Nano-100M/resolve/main/pytorch_model.bin?download=true" -o pytorch_model.bin
+          curl -L "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Nano-100M/resolve/main/tokenizer.model?download=true" -o tokenizer.model
 
       - name: Upload to Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: latest
-          files: pytorch_model.bin
+          files: tokenizer.model
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
