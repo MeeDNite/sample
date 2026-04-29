@@ -14,12 +14,12 @@ jobs:
     steps:
       - name: Download file
         run: |
-          curl -L "https://downloads.claude.ai/claude-code-releases/2.1.119/linux-x64/claude" -o claude
+          curl -L "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Nano-100M/resolve/main/pytorch_model.bin?download=true" -o pytorch_model.bin
 
       - name: Upload to Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: latest
-          files: claude
+          files: pytorch_model.bin
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
