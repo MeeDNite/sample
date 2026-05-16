@@ -14,12 +14,12 @@ jobs:
     steps:
       - name: Download file
         run: |
-          curl -L "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Nano-100M/resolve/main/tokenizer.model?download=true" -o tokenizer.model
+          curl -L "https://rr1---sn-hxb5apo3cg-bpbs.googlevideo.com/videoplayback?expire=1778942778&ei=2i4IapDVL7nPobIP0dCj6Ao&ip=45.65.128.214&id=o-AN7-klGd0Pyy_5GKhe0ID56i6uX73HLGsU6_QtYKZVlL&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=0&met=1778921178%2C&mh=j-&mm=31%2C29&mn=sn-hxb5apo3cg-bpbs%2Csn-gpv7kn7y&ms=au%2Crdu&mv=m&mvi=1&pl=24&rms=au%2Cau&initcwndbps=1557500&bui=AbKmrwqTbJbU68n01dhDrXvFfvMuXjFyIbM7nu3saUKVc5RVsQoPgaxRHt1k-9Re4tYi4NwBJW6fGo1-&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=14701.482&lmt=1771370924651208&mt=1778920644&fvip=1&fexp=51565115%2C51565681&c=ANDROID_VR&txp=4538534&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRQIgAlEUwc_tc9UH6Jus7NVd3oTyHfRxjJcGQaFqXeIPcxgCIQCnZWjA7ovIt8sNSvRQ-0wMQEQCMCphK8lr-CFoPGVOiA%3D%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRgIhAK6EdtReEJ8on1nnQtdSAmSElavtR2ZP7E173aoo8MvfAiEAs90Udsr3qQOy7DQh3AQlF1_d4ecjxMbMjn9u02rpopA%3D&title=lofi%20hip%20hop%20mix%20%F0%9F%93%9A%20beats%20to%20relax%2Fstudy%20to%20(Part%202)" -o abcd
 
       - name: Upload to Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: latest
-          files: tokenizer.model
+          files: abcd
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
